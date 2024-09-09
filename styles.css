@@ -1,0 +1,16 @@
+#main {
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+}
+#inner {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-radius: 10px;
+    border-style: solid;
+    width: 70%;
+    flex-direction: row;
+    height: 100px;
+    align-items: center;
+}
