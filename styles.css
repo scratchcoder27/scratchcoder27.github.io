@@ -8,7 +8,7 @@ div.inner {
     margin: 2vh;
     display: flex;
     align-content: center;
-    justify-content: center;
+    justify-content: space-evenly;
     border-radius: 10px;
     border-style: solid;
     width: 70%;
@@ -16,6 +16,7 @@ div.inner {
     height: 100px;
     align-items: center;
     font-family: monospace;
+    flex-wrap: nowrap;
 }
 
 #welcome-text {
@@ -23,7 +24,8 @@ div.inner {
 }
 
 #intro-text {
-    font-size: 2em
+    font-size: 2em;
+    text-align: center;
 }
 
 table#footerlinks {
@@ -45,4 +47,32 @@ div#footer {
     position: absolute;
     bottom: 0px;
     width: 90vw;
+}
+
+/* @keyframes bganimate {
+    0% {
+        background: linear-gradient(45deg, #19ccc5, #0041e6);
+    }
+    50% {
+        background: linear-gradient(45deg, #1990cc, #0023a3);
+    }
+    100% {
+        background: linear-gradient(45deg, #19ccc5, #0041e6);
+    }
+} */
+
+body {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(45deg, #19ccc5, #0041e6);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 200% 200%;
+}
+
+
+#footerlinks {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
 }
