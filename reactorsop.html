@@ -4,10 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reactor Startup Procedure</title>
+    <link rel="stylesheet" href="reactorsop.css">
 </head>
+
 <body>
-    <object data="uploads/Reactor Startup SOP.pdf" type="application/pdf">
-        <embed src="uploads/Reactor Startup SOP.pdf" type="application/pdf" />
-    </object>
+    <div id="header">
+        <div id="header-text">A BWR-5 Simulator Made In Scratch</div>
+        <img src="uploads/Screenshot_20250918_133230.png" alt="Image" id="header-image">
+    </div>
+
+    <div id="changelog" class="dropdown">
+        <div id="changelog-text-intro" class="dropdown-text-intro">Changelog</div>
+        <pre id="changelog-text" class="dropdown-text-intro">
+Release 1.0:
+- Added IRM
+- Separated RRC Left and RRC Right
+- Neutron Transfer
+- Warning sounds (annunciators not implemented yet)
+- Scram Buttons
+- IRM pointer is now pointier
+
+Version 1.5:
+- Added Recirculation Controls
+- Scram Button cover
+- Improved Scram Button texture
+- Reactor Physics should be better (hopefully)
+- Moved some things around
+
+Version 1.2.0:
+- Added individual rod selection with clear selection button
+- Added Better Recirculation mechanics
+- Added 4 SRM probes, which are withdrawn separately
+- Improved IRM system
+- Added Rod Worth Monitor System, with a defined startup rod sequence
+- Added various rod blocks and SCRAMs
+- Added 4 LPRM strings, which indicate reactor power
+- Added a mode switch with Modes 3, 2, and 1
+- Tweaked reactor behaviour
+- Many more minor tweaks and changes
+
+Version 1.2.1:
+- Improved Rod Position display
+- Smoothened SRM
+        </pre>
+    </div>
+
+    <div id="startup-sop" class="dropdown">
+        <div id="startup-sop-text" class="dropdown-text-intro">Reactor Startup Operations (Official)</div>
+        <object data="uploads/Reactor Startup SOP.pdf" type="application/pdf">
+            <embed src="uploads/Reactor Startup SOP.pdf" type="application/pdf" />
+        </object>
+    </div>
+
+    <div id="startup-video-div" class="dropdown">
+        <div id="startup-video-text" class="dropdown-text-intro">Reactor Startup Video</div>
+        <video id="startup-video" controls>
+            <source src="uploads/Screencast_20250921_222921.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video> 
+    </div>
 </body>
 </html>
